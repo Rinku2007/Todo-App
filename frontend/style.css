@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* 🔥 Auth Page */
+.auth-body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  padding: 35px;
+  border-radius: 20px;
+  text-align: center;
+  width: 320px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.auth-container h2 {
+  margin-bottom: 15px;
+}
+
+/* 🔵 Rounded Inputs */
+.auth-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+}
+
+/* 🔘 Rounded Buttons */
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-container button:hover {
+  transform: scale(1.05);
+}
+
+/* 💬 Message */
+#msg {
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* 🔥 Dashboard */
+/* .dashboard-body {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+.container {
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(15px);
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+}
+
+.task-box {
+  display: flex;
+  gap: 10px;
+}
+
+.task-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.task-box button {
+  padding: 10px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+li {
+  background: rgba(255,255,255,0.2);
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.logout {
+  margin-top: 20px;
+  background: red;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+} */
+
+/* 🔥 Dashboard Background */
+.dashboard-body {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🪟 Main Container */
+.container {
+  width: 420px;
+  padding: 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  color: white;
+  text-align: center;
+}
+
+/* 📝 Title */
+.container h2 {
+  margin-bottom: 20px;
+}
+
+/* ➕ Input Box */
+.task-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.task-box input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+
+/* ➕ Add Button */
+.task-box button {
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+  background: #28a745;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.task-box button:hover {
+  transform: scale(1.1);
+}
+
+/* 📋 Task Card */
+li {
+  list-style: none;
+  background: rgba(255,255,255,0.2);
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+li:hover {
+  transform: translateY(-3px);
+}
+
+/* ✔❌ Buttons */
+li button {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+li button:nth-child(1) {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: white;
+}
+
+li button:nth-child(2) {
+  background: #00c853;
+  color: white;
+}
+
+/* 🚪 Logout */
+.logout {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* 🔥 NEW */
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout:hover {
+  transform: scale(1.05);
+}
